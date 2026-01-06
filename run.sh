@@ -2,6 +2,11 @@
 
 # 快速启动脚本 - 自动激活虚拟环境并运行程序
 
+# 设置UTF-8编码（解决中文显示问题）
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export PYTHONIOENCODING=utf-8
+
 # 检查虚拟环境是否存在
 if [ ! -d "venv" ]; then
     echo "错误：虚拟环境不存在"
